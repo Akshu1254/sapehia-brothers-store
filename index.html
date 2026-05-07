@@ -1,287 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sapehia Brothers | Electronics & Furniture</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapehia Brothers | Electronics & Furniture Store</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-      scroll-behavior: smooth;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+      scroll-behavior:smooth;
     }
 
-    body {
-      background: #f4f7fb;
-      color: #222;
+    body{
+      background:#f4f7fb;
+      color:#222;
     }
 
-    header {
-      background: linear-gradient(135deg, #111827, #2563eb);
-      color: white;
-      padding: 18px 8%;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    header{
+      background:linear-gradient(135deg,#111827,#2563eb);
+      padding:18px 8%;
+      color:white;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
     }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
     }
 
-    .logo {
-      font-size: 28px;
-      font-weight: 700;
+    .logo{
+      font-size:28px;
+      font-weight:700;
     }
 
-    .logo span {
-      color: #ffd700;
+    .logo span{
+      color:#ffd700;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 25px;
+    .nav-links{
+      display:flex;
+      gap:25px;
+      align-items:center;
     }
 
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
+    .nav-links a{
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+      font-weight:500;
     }
 
-    .nav-links a:hover {
-      color: #ffd700;
+    .nav-links a:hover{
+      color:#ffd700;
     }
 
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 40px 8%;
-      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-      url('https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1600&auto=format&fit=crop');
-      background-size: cover;
-      background-position: center;
+    .search-box{
+      padding:10px;
+      border:none;
+      border-radius:10px;
+      outline:none;
     }
 
-    .hero h1 {
-      font-size: 60px;
-      margin-bottom: 20px;
+    .hero{
+      min-height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:40px 8%;
+      background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
     }
 
-    .hero p {
-      font-size: 20px;
-      max-width: 750px;
-      margin: auto;
-      margin-bottom: 35px;
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 14px 30px;
-      background: #ffd700;
-      color: #111;
-      text-decoration: none;
-      border-radius: 50px;
-      font-weight: 600;
-      transition: 0.3s;
+    .hero p{
+      font-size:20px;
+      margin-bottom:35px;
+      max-width:750px;
     }
 
-    .btn:hover {
-      transform: translateY(-3px);
-      background: white;
+    .btn{
+      display:inline-block;
+      padding:14px 28px;
+      border-radius:50px;
+      background:#ffd700;
+      color:#111;
+      text-decoration:none;
+      border:none;
+      cursor:pointer;
+      font-weight:600;
+      transition:0.3s;
+      margin-top:10px;
     }
 
-    section {
-      padding: 80px 8%;
+    .btn:hover{
+      background:white;
+      transform:translateY(-3px);
     }
 
-    .section-title {
-      text-align: center;
-      font-size: 40px;
-      margin-bottom: 50px;
-      color: #111827;
+    section{
+      padding:80px 8%;
     }
 
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
+    .section-title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:50px;
+      color:#111827;
     }
 
-    .category-card {
-      background: white;
-      padding: 30px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-      transition: 0.3s;
+    .categories,.products,.reviews-grid,.features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
     }
 
-    .category-card:hover {
-      transform: translateY(-10px);
+    .category-card,.product-card,.review-card,.feature-box{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 8px 18px rgba(0,0,0,0.08);
+      transition:0.3s;
     }
 
-    .category-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 15px;
-      margin-bottom: 15px;
+    .category-card:hover,.product-card:hover,.review-card:hover{
+      transform:translateY(-10px);
     }
 
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
+    .category-card img,.product-card img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
     }
 
-    .product-card {
-      background: white;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-      transition: 0.3s;
+    .category-card,.review-card,.feature-box{
+      padding:25px;
+      text-align:center;
     }
 
-    .product-card:hover {
-      transform: scale(1.03);
+    .product-info{
+      padding:20px;
     }
 
-    .product-card img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
+    .product-info h3{
+      margin-bottom:10px;
+      color:#2563eb;
     }
 
-    .product-info {
-      padding: 20px;
+    .price{
+      font-size:22px;
+      font-weight:700;
+      margin:12px 0;
     }
 
-    .product-info h3 {
-      margin-bottom: 10px;
-      color: #2563eb;
+    .features{
+      background:#111827;
+      color:white;
+      padding:60px 8%;
     }
 
-    .price {
-      font-size: 22px;
-      font-weight: 700;
-      margin: 12px 0;
+    .feature-box{
+      background:#1f2937;
+      color:white;
     }
 
-    .features {
-      background: #111827;
-      color: white;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-      text-align: center;
+    .feature-box h2{
+      color:#ffd700;
+      font-size:40px;
+      margin-bottom:10px;
     }
 
-    .feature-box h2 {
-      color: #ffd700;
-      margin-bottom: 10px;
-      font-size: 40px;
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:40px;
+      align-items:center;
     }
 
-    .about {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 40px;
-      align-items: center;
+    .about img{
+      width:100%;
+      border-radius:20px;
     }
 
-    .about img {
-      width: 100%;
-      border-radius: 20px;
+    .contact-box{
+      max-width:750px;
+      margin:auto;
+      background:white;
+      padding:40px;
+      border-radius:20px;
+      box-shadow:0 8px 18px rgba(0,0,0,0.08);
     }
 
-    .contact {
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      max-width: 700px;
-      margin: auto;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    .contact-box input,.contact-box textarea{
+      width:100%;
+      padding:14px;
+      margin-bottom:20px;
+      border-radius:10px;
+      border:1px solid #ccc;
+      outline:none;
+      font-size:16px;
     }
 
-    .contact input,
-    .contact textarea {
-      width: 100%;
-      padding: 14px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      outline: none;
-      font-size: 16px;
+    footer{
+      background:#111827;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:40px;
     }
 
-    .contact button {
-      width: 100%;
-      padding: 14px;
-      border: none;
-      border-radius: 10px;
-      background: #2563eb;
-      color: white;
-      font-size: 18px;
-      cursor: pointer;
-      transition: 0.3s;
+    .menu-btn{
+      display:none;
+      font-size:28px;
+      cursor:pointer;
     }
 
-    .contact button:hover {
-      background: #111827;
+    .cart-box{
+      position:fixed;
+      top:100px;
+      right:20px;
+      background:white;
+      padding:20px;
+      width:300px;
+      border-radius:20px;
+      box-shadow:0 8px 18px rgba(0,0,0,0.15);
+      z-index:999;
     }
 
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      margin-top: 50px;
+    .cart-box h3{
+      margin-bottom:15px;
     }
 
-    .menu-btn {
-      display: none;
-      font-size: 28px;
-      cursor: pointer;
+    #cartItems li{
+      margin-bottom:10px;
+    }
+
+    .whatsapp-btn{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:white;
+      width:65px;
+      height:65px;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-decoration:none;
+      font-size:30px;
+      z-index:1000;
+      box-shadow:0 6px 15px rgba(0,0,0,0.2);
     }
 
     @media(max-width:768px){
-      .hero h1 {
-        font-size: 40px;
+      .hero h1{
+        font-size:40px;
       }
 
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        right: 8%;
-        background: #111827;
-        padding: 20px;
-        width: 220px;
-        border-radius: 10px;
+      .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:80px;
+        right:8%;
+        background:#111827;
+        padding:20px;
+        border-radius:10px;
+        width:230px;
       }
 
-      .nav-links.active {
-        display: flex;
+      .nav-links.active{
+        display:flex;
       }
 
-      .menu-btn {
-        display: block;
+      .menu-btn{
+        display:block;
+      }
+
+      .cart-box{
+        width:90%;
+        right:5%;
       }
     }
   </style>
@@ -298,18 +314,20 @@
       <a href="#home">Home</a>
       <a href="#categories">Categories</a>
       <a href="#products">Products</a>
+      <a href="#reviews">Reviews</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
+      <input type="text" class="search-box" placeholder="Search Products">
     </div>
   </nav>
 </header>
 
 <section class="hero" id="home">
   <div>
-    <h1>Electronics & Furniture Store</h1>
+    <h1>Sapehia Brothers Store</h1>
     <p>
       Buy premium LED TVs, Refrigerators, Washing Machines,
-      Sofas, Beds and Home Appliances at the best prices.
+      Furniture and Home Appliances online at affordable prices.
     </p>
 
     <a href="#products" class="btn">Shop Now</a>
@@ -320,29 +338,31 @@
   <h2 class="section-title">Shop Categories</h2>
 
   <div class="categories">
+
     <div class="category-card">
-      <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1200&auto=format&fit=crop" alt="LED TV">
+      <img src="images/tv.jpg" alt="LED TV">
       <h3>LED TVs</h3>
-      <p>Smart TVs with advanced display quality.</p>
+      <p>Latest smart TVs with advanced display quality.</p>
     </div>
 
     <div class="category-card">
-      <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?q=80&w=1200&auto=format&fit=crop" alt="Refrigerator">
+      <img src="images/refrigerator.jpg" alt="Refrigerator">
       <h3>Refrigerators</h3>
-      <p>Energy-efficient refrigerators for every home.</p>
+      <p>Energy-efficient refrigerators for modern homes.</p>
     </div>
 
     <div class="category-card">
-      <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?q=80&w=1200&auto=format&fit=crop" alt="Washing Machine">
+      <img src="images/washingmachine.jpg" alt="Washing Machine">
       <h3>Washing Machines</h3>
-      <p>Automatic washing machines with smart features.</p>
+      <p>Automatic washing machines with smart technology.</p>
     </div>
 
     <div class="category-card">
-      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="Furniture">
+      <img src="images/furniture.jpg" alt="Furniture">
       <h3>Furniture</h3>
-      <p>Modern furniture designs for your home.</p>
+      <p>Modern furniture collections for your home.</p>
     </div>
+
   </div>
 </section>
 
@@ -352,42 +372,70 @@
   <div class="products">
 
     <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=1200&auto=format&fit=crop" alt="LED TV">
+      <img src="images/tv.jpg" alt="TV">
       <div class="product-info">
         <h3>Samsung Smart LED TV</h3>
         <p>55-inch Ultra HD Smart TV with voice control.</p>
         <div class="price">₹45,999</div>
-        <a href="#contact" class="btn">Buy Now</a>
+
+        <button class="btn" onclick="addToCart('Samsung Smart LED TV',45999)">
+          Add To Cart
+        </button>
+
+        <a href="https://wa.me/917807925953?text=I want to buy Samsung Smart LED TV" class="btn" target="_blank">
+          WhatsApp Order
+        </a>
       </div>
     </div>
 
     <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1571172964276-d57aa2f31f6a?q=80&w=1200&auto=format&fit=crop" alt="Refrigerator">
+      <img src="images/refrigerator.jpg" alt="Refrigerator">
       <div class="product-info">
-        <h3>LG Double Door Refrigerator</h3>
-        <p>Large capacity refrigerator with inverter technology.</p>
+        <h3>LG Refrigerator</h3>
+        <p>Double door inverter refrigerator.</p>
         <div class="price">₹38,500</div>
-        <a href="#contact" class="btn">Buy Now</a>
+
+        <button class="btn" onclick="addToCart('LG Refrigerator',38500)">
+          Add To Cart
+        </button>
+
+        <a href="https://wa.me/917807925953?text=I want to buy LG Refrigerator" class="btn" target="_blank">
+          WhatsApp Order
+        </a>
       </div>
     </div>
 
     <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop" alt="Furniture">
+      <img src="images/sofa.jpg" alt="Sofa">
       <div class="product-info">
         <h3>Premium Sofa Set</h3>
-        <p>Comfortable modern sofa set for living rooms.</p>
+        <p>Comfortable and stylish sofa set.</p>
         <div class="price">₹29,999</div>
-        <a href="#contact" class="btn">Buy Now</a>
+
+        <button class="btn" onclick="addToCart('Premium Sofa Set',29999)">
+          Add To Cart
+        </button>
+
+        <a href="https://wa.me/917807925953?text=I want to buy Premium Sofa Set" class="btn" target="_blank">
+          WhatsApp Order
+        </a>
       </div>
     </div>
 
     <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?q=80&w=1200&auto=format&fit=crop" alt="Washing Machine">
+      <img src="images/washingmachine.jpg" alt="Washing Machine">
       <div class="product-info">
         <h3>IFB Washing Machine</h3>
-        <p>Fully automatic washing machine with dryer.</p>
+        <p>Fully automatic washing machine.</p>
         <div class="price">₹24,999</div>
-        <a href="#contact" class="btn">Buy Now</a>
+
+        <button class="btn" onclick="addToCart('IFB Washing Machine',24999)">
+          Add To Cart
+        </button>
+
+        <a href="https://wa.me/917807925953?text=I want to buy IFB Washing Machine" class="btn" target="_blank">
+          WhatsApp Order
+        </a>
       </div>
     </div>
 
@@ -395,6 +443,7 @@
 </section>
 
 <section class="features">
+
   <div class="feature-box">
     <h2>10+</h2>
     <p>Years Experience</p>
@@ -414,53 +463,189 @@
     <h2>24/7</h2>
     <p>Customer Support</p>
   </div>
+
+</section>
+
+<section id="payment">
+  <h2 class="section-title">Payment Methods</h2>
+
+  <div class="products">
+
+    <div class="product-card">
+      <div class="product-info">
+        <h3>UPI Payments</h3>
+        <p>Pay using Google Pay, PhonePe and Paytm.</p>
+        <div class="price">UPI ID: sapehiabrothers@upi</div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-info">
+        <h3>Online Banking</h3>
+        <p>Secure online bank transfer supported.</p>
+        <div class="price">Safe & Secure</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="reviews">
+  <h2 class="section-title">Customer Reviews</h2>
+
+  <div class="reviews-grid">
+
+    <div class="review-card">
+      <h3>Rahul Sharma</h3>
+      <p>Excellent service and genuine electronics products.</p>
+    </div>
+
+    <div class="review-card">
+      <h3>Priya Verma</h3>
+      <p>Best furniture shop with affordable prices.</p>
+    </div>
+
+    <div class="review-card">
+      <h3>Amit Thakur</h3>
+      <p>Fast delivery and amazing customer support.</p>
+    </div>
+
+  </div>
 </section>
 
 <section id="about">
   <h2 class="section-title">About Sapehia Brothers</h2>
 
   <div class="about">
-    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop" alt="Store">
+
+    <img src="images/store.jpg" alt="Store">
 
     <div>
-      <p style="line-height:1.8; margin-bottom:20px;">
-        Sapehia Brothers is a trusted electronics and furniture store providing quality home appliances and modern furniture at affordable prices.
+      <p style="line-height:1.8;margin-bottom:20px;">
+        Sapehia Brothers is a trusted electronics and furniture store providing premium products at affordable prices.
       </p>
 
-      <p style="line-height:1.8; margin-bottom:20px;">
-        We deal in LED TVs, Refrigerators, Washing Machines, Sofas, Beds, Tables and many more products.
+      <p style="line-height:1.8;margin-bottom:20px;">
+        We deal in LED TVs, Refrigerators, Washing Machines, Sofas, Beds, Tables and Home Appliances.
       </p>
 
       <a href="#contact" class="btn">Visit Store</a>
     </div>
+
   </div>
 </section>
 
 <section id="contact">
   <h2 class="section-title">Contact Us</h2>
-  <p style="text-align:center; margin-bottom:25px; font-size:18px; font-weight:500;">
+
+  <p style="text-align:center;font-size:18px;margin-bottom:20px;font-weight:600;">
     Call Us: +91 7807925953 | +91 8219337963
   </p>
 
-  <div class="contact">
+  <div class="contact-box">
+
     <form>
       <input type="text" placeholder="Enter Your Name" required>
       <input type="email" placeholder="Enter Your Email" required>
       <input type="text" placeholder="Enter Mobile Number" required>
       <textarea rows="5" placeholder="Which product are you interested in?"></textarea>
-      <button type="submit">Send Inquiry</button>
+
+      <button class="btn" type="submit">Send Inquiry</button>
     </form>
+
+    <br>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.3319365608166!2d76.785!3d30.7333"
+      width="100%"
+      height="300"
+      style="border:0;border-radius:15px;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
   </div>
 </section>
+
+<section id="admin">
+  <h2 class="section-title">Admin Dashboard</h2>
+
+  <div class="reviews-grid">
+
+    <div class="review-card">
+      <h3>Add Products</h3>
+      <p>Manage store products and categories.</p>
+    </div>
+
+    <div class="review-card">
+      <h3>Manage Orders</h3>
+      <p>Track customer orders and payments.</p>
+    </div>
+
+    <div class="review-card">
+      <h3>Customer Details</h3>
+      <p>Store customer inquiries and contacts.</p>
+    </div>
+
+  </div>
+</section>
+
+<div class="cart-box">
+  <h3>🛒 Shopping Cart</h3>
+
+  <ul id="cartItems"></ul>
+
+  <h4 id="totalPrice">Total: ₹0</h4>
+</div>
 
 <footer>
   <p>© 2026 Sapehia Brothers | Electronics & Furniture Store</p>
 </footer>
 
+<a href="https://wa.me/917807925953" target="_blank" class="whatsapp-btn">
+  💬
+</a>
+
 <script>
-  function toggleMenu() {
+
+  function toggleMenu(){
     document.getElementById('navLinks').classList.toggle('active');
   }
+
+  let cart = [];
+
+  function addToCart(product, price){
+
+    cart.push({product, price});
+
+    updateCart();
+
+    alert(product + ' added to cart');
+  }
+
+  function updateCart(){
+
+    const cartItems = document.getElementById('cartItems');
+    const totalPrice = document.getElementById('totalPrice');
+
+    cartItems.innerHTML = '';
+
+    let total = 0;
+
+    cart.forEach(item => {
+
+      total += item.price;
+
+      const li = document.createElement('li');
+
+      li.textContent = item.product + ' - ₹' + item.price;
+
+      cartItems.appendChild(li);
+    });
+
+    totalPrice.textContent = 'Total: ₹' + total;
+  }
+
 </script>
 
 </body>
