@@ -148,6 +148,7 @@
       width:100%;
       height:240px;
       object-fit:cover;
+      background:#f0f0f0;
     }
 
     .category-card,.review-card,.feature-box{
@@ -164,10 +165,30 @@
       color:#2563eb;
     }
 
+    .product-specs{
+      font-size:13px;
+      color:#666;
+      text-align:left;
+      margin:10px 0;
+      line-height:1.6;
+    }
+
+    .product-specs ul{
+      list-style:none;
+      padding-left:0;
+    }
+
+    .product-specs li:before{
+      content:"✓ ";
+      color:#2563eb;
+      font-weight:bold;
+    }
+
     .price{
       font-size:22px;
       font-weight:700;
       margin:12px 0;
+      color:#ff6b35;
     }
 
     .features{
@@ -340,25 +361,25 @@
   <div class="categories">
 
     <div class="category-card">
-      <img src="images/tv.jpg" alt="LED TV">
+      <img src="https://via.placeholder.com/300x240/1f2937/ffffff?text=LG+LED+TV" alt="LED TV">
       <h3>LG LED TVs</h3>
       <p>Latest LG smart TVs with advanced display quality.</p>
     </div>
 
     <div class="category-card">
-      <img src="images/refrigerator.jpg" alt="Refrigerator">
+      <img src="https://via.placeholder.com/300x240/1f2937/ffffff?text=LG+Refrigerator" alt="Refrigerator">
       <h3>LG Refrigerators</h3>
       <p>Energy-efficient LG refrigerators for modern homes.</p>
     </div>
 
     <div class="category-card">
-      <img src="images/washingmachine.jpg" alt="Washing Machine">
+      <img src="https://via.placeholder.com/300x240/1f2937/ffffff?text=LG+Washing+Machine" alt="Washing Machine">
       <h3>LG Washing Machines</h3>
       <p>Automatic LG washing machines with smart technology.</p>
     </div>
 
     <div class="category-card">
-      <img src="images/furniture.jpg" alt="Air Conditioner">
+      <img src="https://via.placeholder.com/300x240/1f2937/ffffff?text=LG+Air+Conditioner" alt="Air Conditioner">
       <h3>LG Air Conditioners</h3>
       <p>Advanced LG air conditioning systems.</p>
     </div>
@@ -372,27 +393,47 @@
   <div class="products">
 
     <div class="product-card">
-      <img src="images/tv.jpg" alt="TV">
+      <img src="https://via.placeholder.com/300x240/2563eb/ffffff?text=LG+OLED+TV" alt="TV">
       <div class="product-info">
-        <h3>LG OLED Smart TV</h3>
-        <p>55-inch OLED Smart TV with AI ThinQ technology.</p>
+        <h3>LG OLED Smart TV 55"</h3>
+        <p style="margin-bottom:10px;"><strong>Model:</strong> OLED55C3PTA</p>
+        <div class="product-specs">
+          <ul>
+            <li>55-inch 4K OLED Display</li>
+            <li>AI ThinQ Technology</li>
+            <li>120Hz Refresh Rate</li>
+            <li>Dolby Vision & Atmos</li>
+            <li>WebOS 23 Smart TV</li>
+            <li>2 Year Warranty</li>
+          </ul>
+        </div>
         <div class="price">₹79,999</div>
 
-        <button class="btn" onclick="addToCart('LG OLED Smart TV',79999)">
+        <button class="btn" onclick="addToCart('LG OLED Smart TV 55',79999)">
           Add To Cart
         </button>
 
-        <a href="https://wa.me/918219337963?text=I want to buy LG OLED Smart TV" class="btn" target="_blank">
+        <a href="https://wa.me/918219337963?text=I want to buy LG OLED Smart TV 55 inch" class="btn" target="_blank">
           WhatsApp Order
         </a>
       </div>
     </div>
 
     <div class="product-card">
-      <img src="images/refrigerator.jpg" alt="Refrigerator">
+      <img src="https://via.placeholder.com/300x240/2563eb/ffffff?text=LG+Refrigerator" alt="Refrigerator">
       <div class="product-info">
         <h3>LG French Door Refrigerator</h3>
-        <p>Double door linear inverter compressor refrigerator.</p>
+        <p style="margin-bottom:10px;"><strong>Model:</strong> GLB272DSOX</p>
+        <div class="product-specs">
+          <ul>
+            <li>655L Total Capacity</li>
+            <li>Linear Inverter Compressor</li>
+            <li>Smart Inverter Technology</li>
+            <li>Multi Air Flow System</li>
+            <li>Energy Rating: 5 Star</li>
+            <li>10 Year Warranty</li>
+          </ul>
+        </div>
         <div class="price">₹52,500</div>
 
         <button class="btn" onclick="addToCart('LG French Door Refrigerator',52500)">
@@ -406,10 +447,20 @@
     </div>
 
     <div class="product-card">
-      <img src="images/washingmachine.jpg" alt="Washing Machine">
+      <img src="https://via.placeholder.com/300x240/2563eb/ffffff?text=LG+Washer" alt="Washing Machine">
       <div class="product-info">
         <h3>LG Front Load Washing Machine</h3>
-        <p>8 kg AI DD fully automatic washing machine with inverter technology.</p>
+        <p style="margin-bottom:10px;"><strong>Model:</strong> FHV1408ZWP</p>
+        <div class="product-specs">
+          <ul>
+            <li>8 kg Capacity</li>
+            <li>AI DD Technology</li>
+            <li>1400 RPM Spin Speed</li>
+            <li>6 Motion Direct Drive</li>
+            <li>Energy Rating: 5 Star</li>
+            <li>10 Year Warranty</li>
+          </ul>
+        </div>
         <div class="price">₹42,999</div>
 
         <button class="btn" onclick="addToCart('LG Front Load Washing Machine',42999)">
@@ -423,17 +474,27 @@
     </div>
 
     <div class="product-card">
-      <img src="images/tv.jpg" alt="Air Conditioner">
+      <img src="https://via.placeholder.com/300x240/2563eb/ffffff?text=LG+Air+Conditioner" alt="Air Conditioner">
       <div class="product-info">
-        <h3>LG Dual Inverter Air Conditioner</h3>
-        <p>1.5 ton 5-star dual inverter AC with Wi-Fi control.</p>
+        <h3>LG Dual Inverter AC 1.5 Ton</h3>
+        <p style="margin-bottom:10px;"><strong>Model:</strong> MS-Q18YNZA</p>
+        <div class="product-specs">
+          <ul>
+            <li>1.5 Ton Capacity</li>
+            <li>Dual Inverter Technology</li>
+            <li>Copper Condenser</li>
+            <li>4-in-1 Convertible Mode</li>
+            <li>Energy Rating: 5 Star</li>
+            <li>10 Year Warranty</li>
+          </ul>
+        </div>
         <div class="price">₹35,999</div>
 
         <button class="btn" onclick="addToCart('LG Dual Inverter AC',35999)">
           Add To Cart
         </button>
 
-        <a href="https://wa.me/918219337963?text=I want to buy LG Dual Inverter AC" class="btn" target="_blank">
+        <a href="https://wa.me/918219337963?text=I want to buy LG Dual Inverter AC 1.5 Ton" class="btn" target="_blank">
           WhatsApp Order
         </a>
       </div>
@@ -497,17 +558,17 @@
 
     <div class="review-card">
       <h3>Rahul Sharma</h3>
-      <p>Excellent LG products and genuine service from Sapehia Brothers.</p>
+      <p>Excellent LG products and genuine service from Sapehia Brothers. Very satisfied with the TV purchase!</p>
     </div>
 
     <div class="review-card">
       <h3>Priya Verma</h3>
-      <p>Best place to buy LG appliances with affordable prices.</p>
+      <p>Best place to buy LG appliances with affordable prices. Great warranty and after-sales support.</p>
     </div>
 
     <div class="review-card">
       <h3>Amit Thakur</h3>
-      <p>Fast delivery of LG products and amazing customer support.</p>
+      <p>Fast delivery of LG products and amazing customer support. Highly recommended!</p>
     </div>
 
   </div>
@@ -518,7 +579,7 @@
 
   <div class="about">
 
-    <img src="images/store.jpg" alt="Store">
+    <img src="https://via.placeholder.com/400x300/1f2937/ffffff?text=LG+Store" alt="Store">
 
     <div>
       <p style="line-height:1.8;margin-bottom:20px;">
@@ -526,7 +587,11 @@
       </p>
 
       <p style="line-height:1.8;margin-bottom:20px;">
-        We specialize in LG LED TVs, Refrigerators, Washing Machines, Air Conditioners and Home Appliances with genuine warranty.
+        We specialize in LG LED TVs, Refrigerators, Washing Machines, Air Conditioners and Home Appliances with genuine warranty and expert customer service.
+      </p>
+
+      <p style="line-height:1.8;margin-bottom:20px;">
+        Our expert team ensures you get the best LG products suited to your needs with complete installation and after-sales support.
       </p>
 
       <a href="#contact" class="btn">Visit Store</a>
