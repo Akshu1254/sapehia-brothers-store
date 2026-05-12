@@ -1,4 +1,27 @@
-tv.jpg   https://www.lg.com/in/tv-soundbars/?utm_source=chatgpt.com
+<a href="https://www.lg.com/in/tvs/">
+  <img src="tv.jpg" alt="LG TV">
+</a>
+
+<a href="https://www.lg.com/in/refrigerators/">
+  <img src="refrigerator.jpg" alt="LG Refrigerator">
+</a>
+
+<a href="https://www.lg.com/in/washing-machines/">
+  <img src="washingmachine.jpg" alt="LG Washing Machine">
+</a>
+
+<a href="https://www.lg.com/in/">
+  <img src="furniture.jpg" alt="LG Furniture">
+</a>
+
+<a href="https://www.lg.com/in/">
+  <img src="sofa.jpg" alt="LG Sofa">
+</a>
+
+<a href="https://www.lg.com/in/shop/">
+  <img src="store.jpg" alt="LG Store">
+</a>
+tv.jpg  
 refrigerator.jpg
 washingmachine.jpg
 furniture.jpg
