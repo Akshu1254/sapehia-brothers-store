@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akshu1254.github.io/sapehia-brothers-store/sitemap.xml
