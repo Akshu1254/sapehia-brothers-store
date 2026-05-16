@@ -12,7 +12,8 @@
 ## 📱 Contact Information
 - **Phone:** +91 86288 32591 | +91 7807925953
 - **WhatsApp:** [Order Now](https://wa.me/9186288 32591)
-- **Email:** sapehiabrothers@upi
+- **WhatsApp:** [Order Now](https://wa.me/9178079 25953)
+- **Email:** akshitsapehia53@gmail.com
 
 ---
 
@@ -36,9 +37,10 @@
 ---
 
 ## 📍 Visit Our Store
-📌 Location: Himachal Pradesh  
+📌 Location:Vill:Badhal Thore,Teh:Dehra,Distt:Kangra (Himachal Pradesh)  
 🕒 Available: 24/7 Online  
 💬 WhatsApp Support: [Available](https://wa.me/9186288 32591)
+💬 WhatsApp Support: [Available](https://wa.me/9178079 25953)
 
 ---
 
