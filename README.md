@@ -37,9 +37,9 @@
 ---
 
 ## 📍 Visit Our Store
-📌 Location:Vill:Badhal Thore,Teh:Dehra,Distt:Kangra (Himachal Pradesh)  
+📌 Location: Vill:Badhal Thore,Teh:Dehra,Distt:Kangra (Himachal Pradesh)  
 🕒 Available: 24/7 Online  
-💬 WhatsApp Support: [Available](https://wa.me/9186288 32591)
+💬 WhatsApp Support: [Available](https://wa.me/9186288 32591)                                                                                                                                                                                                                                            
 💬 WhatsApp Support: [Available](https://wa.me/9178079 25953)
 
 ---
