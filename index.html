@@ -1,536 +1,458 @@
+# Professional Homepage Upgrade Code for Sapehia Brothers Store
+
+Replace your current `index.html` with the code below.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Search Console Verification -->
-  <meta name="google-site-verification" content="K_2CvrymMSFfnDVoEYip1CPUeJYY6rp-iIfcBK1qLAw">
-  
-  <!-- Basic Meta Tags -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <!-- SEO Meta Tags -->
-  <title>Sapehia Brothers Store | Premium LG Electronics & Furniture | Himachal Pradesh</title>
-  <meta name="description" content="Sapehia Brothers - Authorized LG electronics store in Himachal Pradesh. Buy LG TVs, refrigerators, washing machines & air conditioners online. Genuine products with warranty. Fast delivery & 24/7 support.">
-  <meta name="keywords" content="Sapehia Brothers Store, LG electronics, LG TV, LG refrigerator, LG washing machine, LG AC, electronics shop online, furniture store, Himachal Pradesh">
-  <meta name="author" content="Akshit Sapehia">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Sapehia Brothers Store | Authorized LG Electronics Dealer</title>
+
+  <meta name="description" content="Buy genuine LG TVs, Refrigerators, Washing Machines and Air Conditioners from Sapehia Brothers Store in Himachal Pradesh.">
+
+  <meta name="keywords" content="LG store Himachal Pradesh, LG TV, LG AC, LG Refrigerator, Electronics Store">
+
   <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://akshu1254.github.io/sapehia-brothers-store/">
-  
-  <!-- Open Graph / Social Media Meta Tags -->
-  <meta property="og:type" content="business.business">
-  <meta property="og:url" content="https://akshu1254.github.io/sapehia-brothers-store/">
-  <meta property="og:title" content="Sapehia Brothers Store | Premium LG Electronics & Furniture">
-  <meta property="og:description" content="Authorized LG electronics store. Buy premium products online with genuine warranty & fast delivery.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1200&auto=format&fit=crop">
-  <meta property="og:site_name" content="Sapehia Brothers Store">
-  <meta property="og:locale" content="en_IN">
-  
-  <!-- Twitter Meta Tags -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://akshu1254.github.io/sapehia-brothers-store/">
-  <meta property="twitter:title" content="Sapehia Brothers Store">
-  <meta property="twitter:description" content="Premium LG Electronics & Furniture Store">
-  <meta property="twitter:image" content="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1200&auto=format&fit=crop">
-  
-  <!-- Fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Sapehia Brothers Store",
-    "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1200&auto=format&fit=crop",
-    "description": "Authorized LG Electronics and Furniture Store",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Himachal Pradesh",
-      "addressCountry": "IN"
-    },
-    "telephone": "+91-86288-32591",
-    "priceRange": "₹15,000 - ₹80,000",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
-    "areaServed": "Himachal Pradesh",
-    "url": "https://akshu1254.github.io/sapehia-brothers-store/"
-  }
-  </script>
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org/",
-    "@type": "Organization",
-    "name": "Sapehia Brothers Store",
-    "url": "https://akshu1254.github.io/sapehia-brothers-store/",
-    "logo": "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=300&auto=format&fit=crop",
-    "contact": {
-      "@type": "ContactPoint",
-      "contactType": "Customer Support",
-      "telephone": "+91-86288-32591"
-    },
-    "sameAs": [
-      "https://wa.me/9186288 32591"
-    ]
-  }
-  </script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-      scroll-behavior: smooth;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+      scroll-behavior:smooth;
     }
 
-    body {
-      background: #f4f7fb;
-      color: #222;
+    body{
+      background:#f8fafc;
+      color:#111827;
+      overflow-x:hidden;
     }
 
-    /* Header & Navigation */
-    header {
-      background: linear-gradient(135deg, #111827, #2563eb);
-      padding: 18px 8%;
-      color: white;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    p{
+      line-height:1.8;
+      color:#475569;
     }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
+    h1,h2,h3,h4{
+      letter-spacing:-0.5px;
     }
 
-    .logo {
-      font-size: 28px;
-      font-weight: 700;
+    section{
+      padding:100px 8%;
     }
 
-    .logo span {
-      color: #ffd700;
+    header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(15,23,42,0.92);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(255,255,255,0.1);
+      padding:18px 8%;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 25px;
-      align-items: center;
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
     }
 
-    .nav-links a {
-      text-decoration: none;
-      color: white;
-      transition: 0.3s;
-      font-weight: 500;
+    .logo{
+      color:white;
+      font-size:28px;
+      font-weight:700;
     }
 
-    .nav-links a:hover {
-      color: #ffd700;
+    .logo span{
+      color:#facc15;
     }
 
-    .search-box {
-      padding: 10px;
-      border: none;
-      border-radius: 10px;
-      outline: none;
+    .nav-links{
+      display:flex;
+      gap:25px;
     }
 
-    .menu-btn {
-      display: none;
-      font-size: 28px;
-      cursor: pointer;
+    .nav-links a{
+      color:white;
+      text-decoration:none;
+      position:relative;
+      font-weight:500;
     }
 
-    /* Hero Section */
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 40px 8%;
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1600&auto=format&fit=crop');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+    .nav-links a::after{
+      content:'';
+      position:absolute;
+      width:0;
+      height:2px;
+      background:#facc15;
+      left:0;
+      bottom:-6px;
+      transition:0.3s;
     }
 
-    .hero h1 {
-      font-size: 60px;
-      margin-bottom: 20px;
+    .nav-links a:hover::after{
+      width:100%;
     }
 
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 35px;
-      max-width: 750px;
+    .menu-btn{
+      display:none;
+      color:white;
+      font-size:30px;
+      cursor:pointer;
     }
 
-    /* Buttons */
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      border-radius: 50px;
-      background: #ffd700;
-      color: #111;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      font-weight: 600;
-      transition: 0.3s;
-      margin: 10px 10px 10px 0;
+    .hero{
+      min-height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1600&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
     }
 
-    .btn:hover {
-      background: white;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+    .hero-content{
+      max-width:900px;
     }
 
-    .btn.secondary {
-      background: #2563eb;
-      color: white;
+    .hero-tag{
+      display:inline-block;
+      background:#facc15;
+      color:#111827;
+      padding:10px 20px;
+      border-radius:40px;
+      margin-bottom:25px;
+      font-weight:600;
+      font-size:14px;
     }
 
-    .btn.secondary:hover {
-      background: #1e40af;
+    .hero h1{
+      font-size:65px;
+      margin-bottom:20px;
+      line-height:1.2;
     }
 
-    /* Sections */
-    section {
-      padding: 80px 8%;
+    .hero p{
+      color:#e2e8f0;
+      font-size:20px;
+      margin-bottom:35px;
     }
 
-    .section-title {
-      text-align: center;
-      font-size: 40px;
-      margin-bottom: 50px;
-      color: #111827;
+    .btn{
+      display:inline-block;
+      padding:15px 30px;
+      border-radius:50px;
+      background:#facc15;
+      color:#111827;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+      margin:10px;
     }
 
-    .section-title::after {
-      content: '';
-      display: block;
-      width: 80px;
-      height: 4px;
-      background: #ffd700;
-      margin: 15px auto 0;
+    .btn:hover{
+      transform:translateY(-4px);
+      box-shadow:0 10px 20px rgba(0,0,0,0.2);
     }
 
-    /* Cards */
-    .categories, .products, .reviews-grid, .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
+    .btn.secondary{
+      background:#2563eb;
+      color:white;
     }
 
-    .category-card, .product-card, .review-card, .feature-box {
-      background: white;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-      transition: 0.3s;
+    .section-title{
+      text-align:center;
+      font-size:42px;
+      margin-bottom:60px;
     }
 
-    .category-card:hover, .product-card:hover, .review-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    .section-title::after{
+      content:'';
+      width:90px;
+      height:4px;
+      background:#facc15;
+      display:block;
+      margin:15px auto 0;
+      border-radius:10px;
     }
 
-    .category-card img, .product-card img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-      background: #f0f0f0;
-      transition: 0.4s ease;
+    .categories,
+    .products,
+    .reviews-grid,
+    .features-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
     }
 
-    .product-card:hover img {
-      transform: scale(1.05);
+    .category-card,
+    .product-card,
+    .review-card,
+    .feature-box{
+      background:white;
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      transition:0.4s;
     }
 
-    .category-card, .review-card, .feature-box {
-      padding: 25px;
-      text-align: center;
+    .category-card:hover,
+    .product-card:hover,
+    .review-card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 16px 40px rgba(0,0,0,0.12);
     }
 
-    .product-info {
-      padding: 20px;
+    .category-card img,
+    .product-card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
     }
 
-    .product-info h3 {
-      margin-bottom: 10px;
-      color: #2563eb;
+    .category-card,
+    .review-card,
+    .feature-box{
+      padding:30px;
+      text-align:center;
     }
 
-    .product-specs {
-      font-size: 13px;
-      color: #666;
-      text-align: left;
-      margin: 10px 0;
-      line-height: 1.6;
+    .product-card{
+      position:relative;
+      border:1px solid #e2e8f0;
     }
 
-    .product-specs ul {
-      list-style: none;
-      padding-left: 0;
+    .product-badge{
+      position:absolute;
+      top:15px;
+      left:15px;
+      background:#ef4444;
+      color:white;
+      padding:8px 15px;
+      border-radius:30px;
+      font-size:12px;
+      font-weight:600;
     }
 
-    .product-specs li:before {
-      content: "✓ ";
-      color: #2563eb;
-      font-weight: bold;
+    .product-info{
+      padding:25px;
+      display:flex;
+      flex-direction:column;
+      gap:15px;
     }
 
-    .price {
-      font-size: 22px;
-      font-weight: 700;
-      margin: 12px 0;
-      color: #ff6b35;
+    .product-info h3{
+      color:#2563eb;
     }
 
-    .product-card {
-      border: 1px solid #e5e7eb;
+    .product-specs ul{
+      list-style:none;
     }
 
-    /* Features Section */
-    .features {
-      background: #111827;
-      color: white;
-      padding: 60px 8%;
+    .product-specs li{
+      margin-bottom:8px;
+      color:#475569;
+      font-size:14px;
     }
 
-    .feature-box {
-      background: #1f2937;
-      color: white;
+    .product-specs li::before{
+      content:'✓ ';
+      color:#2563eb;
+      font-weight:bold;
     }
 
-    .feature-box h2 {
-      color: #ffd700;
-      font-size: 40px;
-      margin-bottom: 10px;
+    .price{
+      font-size:28px;
+      font-weight:700;
+      color:#ea580c;
     }
 
-    /* About Section */
-    .about {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 40px;
-      align-items: center;
+    .features{
+      background:#0f172a;
+      color:white;
     }
 
-    .about img {
-      width: 100%;
-      border-radius: 20px;
+    .feature-box{
+      background:#1e293b;
     }
 
-    .about p {
-      line-height: 1.8;
-      margin-bottom: 20px;
-      font-size: 16px;
+    .feature-box h2{
+      color:#facc15;
+      font-size:45px;
+      margin-bottom:10px;
     }
 
-    /* Contact Form */
-    .contact-box {
-      max-width: 750px;
-      margin: auto;
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:40px;
+      align-items:center;
     }
 
-    .contact-box input, .contact-box textarea {
-      width: 100%;
-      padding: 14px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      outline: none;
-      font-size: 16px;
-      font-family: 'Poppins', sans-serif;
+    .about img{
+      width:100%;
+      border-radius:25px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.15);
     }
 
-    .contact-box input:focus, .contact-box textarea:focus {
-      border-color: #2563eb;
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    .contact-box{
+      background:white;
+      padding:40px;
+      border-radius:24px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      max-width:850px;
+      margin:auto;
     }
 
-    /* Cart Box */
-    .cart-box {
-      position: fixed;
-      top: 100px;
-      right: 20px;
-      background: white;
-      padding: 20px;
-      width: 300px;
-      border-radius: 20px;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-      z-index: 999;
-      max-height: 400px;
-      overflow-y: auto;
+    .contact-box input,
+    .contact-box textarea{
+      width:100%;
+      padding:15px;
+      margin-bottom:20px;
+      border-radius:12px;
+      border:1px solid #dbeafe;
+      font-size:15px;
     }
 
-    .cart-box h3 {
-      margin-bottom: 15px;
-      color: #2563eb;
+    .contact-box input:focus,
+    .contact-box textarea:focus{
+      outline:none;
+      border-color:#2563eb;
     }
 
-    #cartItems li {
-      margin-bottom: 10px;
-      padding: 10px;
-      background: #f0f0f0;
-      border-radius: 5px;
-      font-size: 12px;
+    .review-card h3{
+      margin-bottom:15px;
+      color:#2563eb;
     }
 
-    #totalPrice {
-      margin-top: 15px;
-      padding-top: 15px;
-      border-top: 2px solid #e5e7eb;
-      color: #ff6b35;
+    footer{
+      background:#0f172a;
+      color:white;
+      padding:70px 8% 40px;
     }
 
-    /* WhatsApp Button */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      width: 65px;
-      height: 65px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      font-size: 30px;
-      z-index: 1000;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-      transition: 0.3s;
+    .footer-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:35px;
+      margin-bottom:40px;
     }
 
-    .whatsapp-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    .footer-grid h4{
+      margin-bottom:20px;
+      color:#facc15;
     }
 
-    /* Footer */
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 40px 8%;
-      margin-top: 40px;
+    .footer-grid ul{
+      list-style:none;
     }
 
-    footer p {
-      margin: 10px 0;
+    .footer-grid ul li{
+      margin-bottom:10px;
     }
 
-    .footer-section {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-      margin-bottom: 30px;
-      text-align: left;
+    .footer-grid ul li a{
+      color:#cbd5e1;
+      text-decoration:none;
     }
 
-    .footer-section h4 {
-      margin-bottom: 15px;
-      color: #ffd700;
+    .footer-bottom{
+      border-top:1px solid rgba(255,255,255,0.1);
+      padding-top:25px;
+      text-align:center;
+      color:#cbd5e1;
     }
 
-    .footer-section ul {
-      list-style: none;
+    .whatsapp-btn{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      width:65px;
+      height:65px;
+      border-radius:50%;
+      background:#25D366;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      text-decoration:none;
+      font-size:30px;
+      box-shadow:0 12px 25px rgba(0,0,0,0.2);
+      z-index:999;
     }
 
-    .footer-section ul li {
-      margin-bottom: 8px;
-    }
+    @media(max-width:768px){
 
-    .footer-section ul li a {
-      color: #bbb;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .footer-section ul li a:hover {
-      color: #ffd700;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 40px;
+      .hero h1{
+        font-size:42px;
       }
 
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        right: 8%;
-        background: #111827;
-        padding: 20px;
-        border-radius: 10px;
-        width: 230px;
+      .hero p{
+        font-size:17px;
       }
 
-      .nav-links.active {
-        display: flex;
+      .menu-btn{
+        display:block;
       }
 
-      .menu-btn {
-        display: block;
+      .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        right:5%;
+        top:80px;
+        background:#0f172a;
+        width:220px;
+        padding:20px;
+        border-radius:15px;
       }
 
-      .cart-box {
-        width: 90%;
-        right: 5%;
-        top: 80px;
+      .nav-links.active{
+        display:flex;
       }
 
-      section {
-        padding: 50px 5%;
+      section{
+        padding:70px 5%;
       }
 
-      .section-title {
-        font-size: 30px;
-      }
-
-      .footer-section {
-        grid-template-columns: 1fr;
-      }
     }
+
   </style>
+
 </head>
 <body>
 
-<!-- Header -->
 <header>
   <nav>
-    <div class="logo">Sapehia <span>Brothers</span></div>
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <div class="logo">
+      Sapehia <span>Brothers</span>
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">
+      ☰
+    </div>
+
     <div class="nav-links" id="navLinks">
       <a href="#home">Home</a>
       <a href="#categories">Categories</a>
@@ -539,306 +461,289 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
+
   </nav>
 </header>
 
-<!-- Hero Section -->
 <section class="hero" id="home">
-  <div>
-    <h1>Sapehia Brothers - Premium LG Store</h1>
-    <p>Buy authentic LG electronics and furniture at the best prices with genuine warranty and 24/7 customer support. Your trusted authorized LG dealer.</p>
-    <a href="#products" class="btn">Shop Now</a>
-    <a href="https://wa.me/9186288 32591?text=Hi! I want to place an order" class="btn secondary" target="_blank">📱 WhatsApp Order</a>
+
+  <div class="hero-content" data-aos="fade-up">
+
+    <span class="hero-tag">
+      Authorized LG Dealer
+    </span>
+
+    <h1>
+      Premium LG Electronics Store
+    </h1>
+
+    <p>
+      Smart TVs, Refrigerators, Washing Machines & Air Conditioners with Genuine Warranty and Fast Delivery Across Himachal Pradesh.
+    </p>
+
+    <a href="#products" class="btn">
+      Explore Products
+    </a>
+
+    <a href="https://wa.me/918628832591"
+       class="btn secondary"
+       target="_blank">
+       WhatsApp Us
+    </a>
+
   </div>
+
 </section>
 
-<!-- Categories Section -->
 <section id="categories">
+
   <h2 class="section-title">LG Product Categories</h2>
+
   <div class="categories">
-    <div class="category-card">
-      <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&h=240&fit=crop" alt="Premium LG LED TVs">
-      <h3>LG LED TVs</h3>
-      <p>Experience stunning picture quality with latest LG smart TVs featuring 4K resolution, AI upscaling, and WebOS.</p>
+
+    <div class="category-card" data-aos="fade-up">
+      <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=600" alt="LG TV">
+      <h3>LG Smart TVs</h3>
+      <p>Premium 4K and OLED Smart TVs with AI technology.</p>
     </div>
 
-    <div class="category-card">
-      <img src="https://images.unsplash.com/photo-1584568694244-f432bdb2e3a5?w=400&h=240&fit=crop" alt="Energy-efficient LG Refrigerators">
+    <div class="category-card" data-aos="fade-up">
+      <img src="https://images.unsplash.com/photo-1584568694244-f432bdb2e3a5?w=600" alt="LG Refrigerator">
       <h3>LG Refrigerators</h3>
-      <p>Keep your food fresh with advanced LG refrigerators featuring inverter compressors and smart technology.</p>
+      <p>Energy-efficient refrigerators with smart inverter technology.</p>
     </div>
 
-    <div class="category-card">
-      <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400&h=240&fit=crop" alt="LG Washing Machines">
+    <div class="category-card" data-aos="fade-up">
+      <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=600" alt="LG Washing Machine">
       <h3>LG Washing Machines</h3>
-      <p>Automatic LG washing machines with AI DD technology, large capacity, and 5-star energy ratings.</p>
+      <p>Advanced front load and top load washing machines.</p>
     </div>
 
-    <div class="category-card">
-      <img src="https://images.unsplash.com/photo-1631545806843-2d1b6c7b2d7d?w=400&h=240&fit=crop" alt="LG Air Conditioners">
-      <h3>LG Air Conditioners</h3>
-      <p>Advanced LG AC systems with dual inverter technology, 4-in-1 modes, and efficient cooling.</p>
-    </div>
   </div>
+
 </section>
 
-<!-- Featured Products -->
 <section id="products">
-  <h2 class="section-title">Featured LG Products</h2>
+
+  <h2 class="section-title">Featured Products</h2>
+
   <div class="products">
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&h=240&fit=crop" alt="LG OLED Smart TV 55">
+    <div class="product-card" data-aos="fade-up">
+
+      <div class="product-badge">
+        Best Seller
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=600" alt="LG OLED TV">
+
       <div class="product-info">
+
         <h3>LG OLED Smart TV 55"</h3>
-        <p><strong>Model:</strong> OLED55C3PTA</p>
+
         <div class="product-specs">
           <ul>
-            <li>55-inch 4K OLED Display</li>
-            <li>AI ThinQ Technology</li>
+            <li>4K OLED Display</li>
             <li>120Hz Refresh Rate</li>
-            <li>Dolby Vision & Atmos</li>
-            <li>WebOS 23 Smart TV</li>
+            <li>Dolby Atmos</li>
             <li>2 Year Warranty</li>
           </ul>
         </div>
-        <div class="price">₹79,999</div>
-        <button class="btn" onclick="addToCart('LG OLED Smart TV 55', 79999)">Add To Cart</button>
-        <a href="https://wa.me/9186288 32591?text=I want to buy LG OLED Smart TV 55 inch. Please provide details." class="btn secondary" target="_blank">Order on WhatsApp</a>
+
+        <div class="price">
+          ₹79,999
+        </div>
+
+        <a href="https://wa.me/918628832591?text=I want to order LG OLED Smart TV"
+           class="btn"
+           target="_blank">
+           Order Now
+        </a>
+
       </div>
+
     </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1584568694244-f432bdb2e3a5?w=400&h=240&fit=crop" alt="LG French Door Refrigerator">
+    <div class="product-card" data-aos="fade-up">
+
+      <div class="product-badge">
+        Popular
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1584568694244-f432bdb2e3a5?w=600" alt="LG Refrigerator">
+
       <div class="product-info">
-        <h3>LG French Door Refrigerator</h3>
-        <p><strong>Model:</strong> GLB272DSOX</p>
+
+        <h3>LG Smart Refrigerator</h3>
+
         <div class="product-specs">
           <ul>
-            <li>655L Total Capacity</li>
-            <li>Linear Inverter Compressor</li>
-            <li>Smart Inverter Technology</li>
-            <li>Multi Air Flow System</li>
-            <li>Energy Rating: 5 Star</li>
+            <li>655L Capacity</li>
+            <li>Inverter Compressor</li>
+            <li>5 Star Rating</li>
             <li>10 Year Warranty</li>
           </ul>
         </div>
-        <div class="price">₹52,500</div>
-        <button class="btn" onclick="addToCart('LG French Door Refrigerator', 52500)">Add To Cart</button>
-        <a href="https://wa.me/9186288 32591?text=I want to buy LG French Door Refrigerator. Please provide details." class="btn secondary" target="_blank">Order on WhatsApp</a>
-      </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400&h=240&fit=crop" alt="LG Front Load Washing Machine">
-      <div class="product-info">
-        <h3>LG Front Load Washing Machine</h3>
-        <p><strong>Model:</strong> FHV1408ZWP</p>
-        <div class="product-specs">
-          <ul>
-            <li>8 kg Capacity</li>
-            <li>AI DD Technology</li>
-            <li>1400 RPM Spin Speed</li>
-            <li>6 Motion Direct Drive</li>
-            <li>Energy Rating: 5 Star</li>
-            <li>10 Year Warranty</li>
-          </ul>
+        <div class="price">
+          ₹52,500
         </div>
-        <div class="price">₹42,999</div>
-        <button class="btn" onclick="addToCart('LG Front Load Washing Machine', 42999)">Add To Cart</button>
-        <a href="https://wa.me/9186288 32591?text=I want to buy LG Front Load Washing Machine. Please provide details." class="btn secondary" target="_blank">Order on WhatsApp</a>
-      </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1631545806843-2d1b6c7b2d7d?w=400&h=240&fit=crop" alt="LG Dual Inverter AC 1.5 Ton">
-      <div class="product-info">
-        <h3>LG Dual Inverter AC 1.5 Ton</h3>
-        <p><strong>Model:</strong> MS-Q18YNZA</p>
-        <div class="product-specs">
-          <ul>
-            <li>1.5 Ton Capacity</li>
-            <li>Dual Inverter Technology</li>
-            <li>Copper Condenser</li>
-            <li>4-in-1 Convertible Mode</li>
-            <li>Energy Rating: 5 Star</li>
-            <li>10 Year Warranty</li>
-          </ul>
-        </div>
-        <div class="price">₹35,999</div>
-        <button class="btn" onclick="addToCart('LG Dual Inverter AC', 35999)">Add To Cart</button>
-        <a href="https://wa.me/9186288 32591?text=I want to buy LG Dual Inverter AC 1.5 Ton. Please provide details." class="btn secondary" target="_blank">Order on WhatsApp</a>
+        <a href="https://wa.me/918628832591?text=I want to order LG Refrigerator"
+           class="btn"
+           target="_blank">
+           Order Now
+        </a>
+
       </div>
+
     </div>
 
   </div>
+
 </section>
 
-<!-- Features Section -->
 <section class="features">
-  <div class="feature-box">
-    <h2>10+</h2>
-    <p>Years of LG Experience</p>
+
+  <div class="features-grid">
+
+    <div class="feature-box">
+      <h2>10+</h2>
+      <p>Years Experience</p>
+    </div>
+
+    <div class="feature-box">
+      <h2>5000+</h2>
+      <p>Happy Customers</p>
+    </div>
+
+    <div class="feature-box">
+      <h2>24/7</h2>
+      <p>Customer Support</p>
+    </div>
+
+    <div class="feature-box">
+      <h2>100%</h2>
+      <p>Genuine Products</p>
+    </div>
+
   </div>
 
-  <div class="feature-box">
-    <h2>5000+</h2>
-    <p>Happy Customers</p>
-  </div>
-
-  <div class="feature-box">
-    <h2>50+</h2>
-    <p>Products Available</p>
-  </div>
-
-  <div class="feature-box">
-    <h2>24/7</h2>
-    <p>Customer Support</p>
-  </div>
 </section>
 
-<!-- Payment Methods -->
-<section id="payment">
-  <h2 class="section-title">Payment Methods</h2>
-  <div class="products">
-    <div class="product-card">
-      <div class="product-info">
-        <h3>💳 UPI Payments</h3>
-        <p>Pay using Google Pay, PhonePe, Paytm, and other UPI apps</p>
-        <div class="price">Safe & Secure</div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-info">
-        <h3>🏦 Online Banking</h3>
-        <p>Direct bank transfer with secure encryption</p>
-        <div class="price">Safe & Secure</div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-info">
-        <h3>📱 WhatsApp Payment</h3>
-        <p>Pay through WhatsApp and get instant confirmation</p>
-        <div class="price">Verified</div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-info">
-        <h3>🚚 Cash on Delivery</h3>
-        <p>Available for selected areas in Himachal Pradesh</p>
-        <div class="price">Convenient</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Customer Reviews -->
 <section id="reviews">
+
   <h2 class="section-title">Customer Reviews</h2>
+
   <div class="reviews-grid">
-    <div class="review-card">
-      <h3>⭐⭐⭐⭐⭐ Rahul Sharma</h3>
-      <p>"Excellent LG products and genuine service from Sapehia Brothers. Very satisfied with the TV purchase! Highly recommended."</p>
+
+    <div class="review-card" data-aos="fade-up">
+      <h3>★★★★★ Rahul Sharma</h3>
+      <p>Excellent service and genuine LG products. Installation was quick and professional.</p>
     </div>
 
-    <div class="review-card">
-      <h3>⭐⭐⭐⭐⭐ Priya Verma</h3>
-      <p>"Best place to buy LG appliances with affordable prices. Great warranty and after-sales support. Will buy again!"</p>
+    <div class="review-card" data-aos="fade-up">
+      <h3>★★★★★ Priya Verma</h3>
+      <p>Very affordable prices with proper warranty support. Highly recommended.</p>
     </div>
 
-    <div class="review-card">
-      <h3>⭐⭐⭐⭐⭐ Amit Thakur</h3>
-      <p>"Fast delivery of LG products and amazing customer support. Highly recommended for anyone in Himachal Pradesh!"</p>
+    <div class="review-card" data-aos="fade-up">
+      <h3>★★★★★ Amit Thakur</h3>
+      <p>Fast delivery and amazing customer support. Best LG dealer in Himachal.</p>
     </div>
+
   </div>
+
 </section>
 
-<!-- About Section -->
 <section id="about">
-  <h2 class="section-title">About Sapehia Brothers Store</h2>
+
+  <h2 class="section-title">About Us</h2>
+
   <div class="about">
-    <img src="https://images.unsplash.com/photo-1573909617346-97f7ef28e5a9?w=500&h=400&fit=crop" alt="Sapehia Brothers Store">
+
+    <img src="https://images.unsplash.com/photo-1573909617346-97f7ef28e5a9?w=800" alt="Store">
+
     <div>
-      <h3 style="color: #2563eb; margin-bottom: 20px; font-size: 24px;">Your Authorized LG Electronics Partner</h3>
-      <p>Sapehia Brothers is an authorized LG store providing premium products at affordable prices in Himachal Pradesh. We specialize in LG LED TVs, Refrigerators, Washing Machines, Air Conditioners and Home Appliances with genuine warranty and expert customer service.</p>
 
-      <p>Our expert team ensures you get the best LG products suited to your needs with complete installation and after-sales support. We believe in transparency, quality, and customer satisfaction.</p>
+      <h3 style="margin-bottom:20px;color:#2563eb;">
+        Trusted LG Electronics Partner
+      </h3>
 
-      <p><strong>Why Choose Us?</strong></p>
-      <ul style="margin-left: 20px; margin-bottom: 20px;">
-        <li>✓ Authorized LG Dealer</li>
-        <li>✓ 100% Genuine Products</li>
-        <li>✓ Extended Warranty Options</li>
-        <li>✓ Free Installation & Demo</li>
-        <li>✓ 24/7 Customer Support</li>
-        <li>✓ Fast Delivery Available</li>
-      </ul>
+      <p>
+        Sapehia Brothers Store is a trusted electronics store providing genuine LG products with installation, warranty and after-sales support.
+      </p>
 
-      <a href="#contact" class="btn">Get In Touch</a>
+      <p>
+        We provide Smart TVs, Refrigerators, Air Conditioners and Washing Machines across Himachal Pradesh.
+      </p>
+
+      <a href="#contact" class="btn">
+        Contact Us
+      </a>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- Contact Section -->
 <section id="contact">
+
   <h2 class="section-title">Contact Us</h2>
-  
-  <div style="text-align: center; margin-bottom: 40px;">
-    <h3 style="color: #2563eb; margin-bottom: 20px;">📞 Phone</h3>
-    <p style="font-size: 18px; font-weight: 600;">+91 86288 32591 | +91 7807925953</p>
-    <p style="margin-bottom: 20px;">Available 24/7 for your inquiries and orders</p>
-    
-    <h3 style="color: #2563eb; margin-bottom: 20px; margin-top: 20px;">💬 WhatsApp</h3>
-    <p style="font-size: 18px; font-weight: 600;"><a href="https://wa.me/9186288 32591" target="_blank" style="color: #25D366; text-decoration: none;">Chat with us on WhatsApp →</a></p>
-  </div>
 
   <div class="contact-box">
-    <h3 style="margin-bottom: 20px; color: #2563eb;">Send us an Inquiry</h3>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Full Name" required>
-      <input type="email" placeholder="Your Email Address" required>
-      <input type="text" placeholder="Your Mobile Number" required>
-      <textarea rows="5" placeholder="Tell us about the LG product you're interested in..."></textarea>
-      <button class="btn" type="submit">Send Inquiry</button>
+
+    <h3 style="margin-bottom:20px;color:#2563eb;">
+      Send Inquiry
+    </h3>
+
+    <form>
+
+      <input type="text" placeholder="Your Name" required>
+
+      <input type="email" placeholder="Your Email" required>
+
+      <input type="text" placeholder="Mobile Number" required>
+
+      <textarea rows="5" placeholder="Tell us about the product you need"></textarea>
+
+      <button class="btn" type="submit">
+        Submit Inquiry
+      </button>
+
     </form>
 
-    <div style="margin-top: 40px; padding-top: 40px; border-top: 2px solid #e5e7eb;">
-      <h3 style="margin-bottom: 20px; color: #2563eb;">📍 Our Service Area</h3>
-      <p style="margin-bottom: 20px;">We serve customers across Himachal Pradesh with fast delivery and professional installation services.</p>
+    <div style="margin-top:40px;">
+
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.3319365608166!2d76.785!3d30.7333"
-        width="100%"
-        height="300"
-        style="border:0;border-radius:15px;"
-        allowfullscreen=""
-        loading="lazy">
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.3319365608166!2d76.785!3d30.7333"
+      width="100%"
+      height="300"
+      style="border:0;border-radius:20px;"
+      allowfullscreen=""
+      loading="lazy">
       </iframe>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- Shopping Cart -->
-<div class="cart-box">
-  <h3>🛒 Shopping Cart</h3>
-  <ul id="cartItems"></ul>
-  <h4 id="totalPrice">Total: ₹0</h4>
-</div>
-
-<!-- WhatsApp Button -->
-<a href="https://wa.me/9186288 32591" target="_blank" class="whatsapp-btn" title="Chat with us on WhatsApp">
-  💬
+<a href="https://wa.me/918628832591"
+   class="whatsapp-btn"
+   target="_blank">
+   💬
 </a>
 
-<!-- Footer -->
 <footer>
-  <div class="footer-section">
+
+  <div class="footer-grid">
+
     <div>
-      <h4>Sapehia Brothers Store</h4>
-      <p>Your trusted authorized LG electronics and furniture dealer in Himachal Pradesh.</p>
-      <p style="margin-top: 10px;"><strong>Phone:</strong> +91 86288 32591 | +91 7807925953</p>
+      <h4>Sapehia Brothers</h4>
+      <p>Authorized LG Electronics Dealer in Himachal Pradesh.</p>
     </div>
 
     <div>
@@ -846,85 +751,60 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#products">Products</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </div>
 
     <div>
-      <h4>Our Services</h4>
+      <h4>Services</h4>
       <ul>
-        <li>✓ Free Delivery</li>
-        <li>✓ Professional Installation</li>
-        <li>✓ Extended Warranty</li>
-        <li>✓ After-Sales Support</li>
-        <li>✓ Product Demo</li>
+        <li>Product Delivery</li>
+        <li>Installation</li>
+        <li>Warranty Support</li>
       </ul>
     </div>
 
     <div>
-      <h4>Connect With Us</h4>
+      <h4>Contact</h4>
       <ul>
-        <li><a href="https://wa.me/9186288 32591" target="_blank">💬 WhatsApp: +91 86288 32591</a></li>
-        <li><a href="tel:+919186288 32591">📞 Call Us</a></li>
-        <li><a href="mailto:contact@sapehiabrothers.com">📧 Email</a></li>
+        <li>+91 86288 32591</li>
+        <li>WhatsApp Support</li>
+        <li>Himachal Pradesh</li>
       </ul>
     </div>
+
   </div>
 
-  <div style="border-top: 1px solid #333; padding-top: 20px; margin-top: 20px;">
-    <p>© 2026 Sapehia Brothers Store. All Rights Reserved.</p>
-    <p style="font-size: 12px; margin-top: 10px;">Authorized LG Dealer | Premium Electronics & Furniture | Himachal Pradesh</p>
+  <div class="footer-bottom">
+    © 2026 Sapehia Brothers Store. All Rights Reserved.
   </div>
+
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
-  // Mobile Menu Toggle
-  function toggleMenu() {
+
+  AOS.init({
+    duration:1000,
+    once:true
+  });
+
+  function toggleMenu(){
     document.getElementById('navLinks').classList.toggle('active');
   }
 
-  // Shopping Cart
-  let cart = [];
-
-  function addToCart(product, price) {
-    cart.push({product, price});
-    updateCart();
-    alert(product + ' added to cart!');
-  }
-
-  function updateCart() {
-    const cartItems = document.getElementById('cartItems');
-    const totalPrice = document.getElementById('totalPrice');
-
-    cartItems.innerHTML = '';
-    let total = 0;
-
-    cart.forEach((item, index) => {
-      total += item.price;
-      const li = document.createElement('li');
-      li.innerHTML = `<strong>${item.product}</strong><br>₹${item.price.toLocaleString('en-IN')}`;
-      cartItems.appendChild(li);
-    });
-
-    totalPrice.textContent = 'Total: ₹' + total.toLocaleString('en-IN');
-  }
-
-  // Contact Form
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you for your inquiry! We will contact you soon via WhatsApp or phone.');
-    this.reset();
-  });
-
-  // Close mobile menu when link is clicked
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.getElementById('navLinks').classList.remove('active');
-    });
-  });
 </script>
 
 </body>
 </html>
+```
+
+After replacing the file:
+
+1. Save `index.html`
+2. Upload to your GitHub repository
+3. Wait 1–2 minutes
+4. Refresh your GitHub Pages website
+
+Your website will instantly look much more professional and less like a demo project.
