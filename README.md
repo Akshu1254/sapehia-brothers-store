@@ -11,8 +11,8 @@
 
 ## 📱 Contact Information
 - **Phone:** +91 86288 32591 | +91 7807925953
-- **WhatsApp:** [Order Now](https://wa.me/9186288 32591)
-- **WhatsApp:** [Order Now](https://wa.me/9178079 25953)
+- **WhatsApp:** [Order Now](https://wa.me/918628832591)
+- **WhatsApp:** [Order Now](https://wa.me/917807925953)
 - **Email:** akshitsapehia53@gmail.com
 
 ---
@@ -23,7 +23,9 @@
 - **LG Washing Machines** - Automatic machines with smart technology
 - **LG Air Conditioners** - Advanced cooling systems
 - **Home Appliances** - Complete range of premium LG products
-
+- **Furniture ** - Ready using smart technology
+- **All style furniture** - According to the customers need 
+- **100% quality** - Using quality and good woods for Manufacturing of furniture. 
 ---
 
 ## ✨ Why Choose Us?
@@ -39,8 +41,8 @@
 ## 📍 Visit Our Store
 📌 Location: Vill:Badhal Thore,Teh:Dehra,Distt:Kangra (Himachal Pradesh)  
 🕒 Available: 24/7 Online  
-💬 WhatsApp Support: [Available](https://wa.me/9186288 32591)                                                                                                                                                                                                                                            
-💬 WhatsApp Support: [Available](https://wa.me/9178079 25953)
+💬 WhatsApp Support: [Available](https://wa.me/918628832591)                                                                                                                                                                                                                                            
+💬 WhatsApp Support: [Available](https://wa.me/917807925953)
 
 ---
 
